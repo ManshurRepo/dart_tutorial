@@ -542,7 +542,7 @@ void main() {
 }*/
 //11. Suppose, you often go to restaurant with friends and you have to split amount of bill.
 // Write a program to calculate split amount of bill.
-import 'dart:io';
+//import 'dart:io';
 
 /*void main() {
   print("masukan total tagihan: ");
