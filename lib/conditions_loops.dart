@@ -119,10 +119,63 @@
 }*/
 
 //contoh 4 menampilkan angka genap dari angka 50 s/d 100
-void main() {
+/*void main() {
   for (int i = 50; i <= 100; i++) {
     if (i % 2 == 0) {
       print(i);
     }
+  }
+}*/
+
+//infinite loop
+/*void main() {
+  for (int i = 1; i >= 1; i++)
+  {
+    print(i);
+  }
+} */
+
+//2.2 for each loops
+/*void main() {
+  List<String> footballplayers = ['Ronaldo', 'Messi', 'Neymar', 'Mbappe'];
+  footballplayers.forEach((namaPemain) => print(namaPemain));
+}*/
+
+// contoh 1 Print Each Total and Average Of Lists
+/*void main() {
+  List<int> numbers = [1, 2, 3, 4, 5];
+  int total = 0;
+
+  numbers.forEach((num) => total = total + num);
+  print("totalnya adalah $total");
+
+  double avg = total / (numbers.length);
+  print("average is $avg");
+} */
+
+//2.3 for in loop
+/*void main() {
+  List<String> pemainTimnas = ['Marselino', 'Ivar', 'Rafael', 'Ridho'];
+
+  for (String pemain in pemainTimnas) {
+    print(pemain);
+  }
+}*/
+
+//2.4 How to Find Index Value Of List
+/*void main() {
+  List<String> strikerEmyu = ['Rashford', 'Martial', 'Garnacho', 'Antony'];
+
+  strikerEmyu
+      .asMap()
+      .forEach((index, value) => print("index ke: $index adalah: $value"));
+} */
+
+//2.5 Print Unicode Value of Each Character of String
+void main() {
+  String name = "John";
+
+  for (var codePoint in name.runes) {
+    print("Unicode of ${String.fromCharCode(codePoint)} is $codePoint");
   }
 }
