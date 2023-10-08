@@ -145,7 +145,7 @@ void main() {
   }
 } */
 
-void main() {
+/*void main() {
   print("tes exception");
   try {
     var a = 7;
@@ -157,4 +157,161 @@ void main() {
   } finally {
     print("paksa untuk eksekusi kode error!");
   }
+}
+*/
+
+// latihan aplikasi konversi suhuh fahreheit > celcius
+//import 'dart:io';
+
+/*void main() {
+  // input suhu dalam fahrenheit
+  stdout.write("masukan suhu dalam fahrenheit: ");
+  int fahrenheit = int.parse(stdin.readLineSync()!);
+
+  //buat fungsi konversi
+  num celcius = (fahrenheit - 32) * 5 / 9;
+  print("$fahrenheit derajat fahrenheit = $celcius derajat celcius");
+}*/
+
+// Functions
+/*void main() {
+  greet();
+}
+
+void greet() {
+  print('Hello');
+}
+*/
+
+/*void main() {
+  greet('Yopi', 1996);
+}
+
+void greet(String nama, int tglLahir) {
+  var usia = 2023 - tglLahir;
+  print("hallo $nama, Tahun ini kamu berusia $usia");
+}*/
+/*void main() {
+  var firstNumber = 64;
+  var secondNumber = 150;
+  print(
+      'persentase dari $firstNumber & $secondNumber adalah: ${persentase(firstNumber, secondNumber)}%');
+}
+
+double average(num num1, num num2) {
+  return (num1 + num2) / 2;
+}
+
+int perkalian(int num1, int num2) {
+  return (num1 * num2);
+}
+
+double persentase(num1, num2) {
+  return (num1 / num2) * 100;
+}*/
+
+/*
+//optional parameters
+void greetNewUser(String Name, int age, bool isVerified)
+greetNewUSer('Widy', 20, true);
+
+//optional parameter:
+void greetNewUser([String Name, int age, bool isVerified])
+//memanggil fungsi
+greetNewUSer('Widy', 20, true);
+greetNewUser('widy', 20);
+greetNewUser('widy');
+greetNewUSer();
+
+//null safety
+void greetNewUser([String? Name, int? age, bool? isVerified])
+//memanggil fungsi
+greetNewUser(null, null, true);
+
+//named optional parameters
+void greetNewUser({String Name, int age, bool isVerified})
+//memanggil fungsi
+greetNewUSer(name:'Widy',Age: 20,isVerified: true);
+greetNewUser(name: 'widy', age: 20);
+greetNewUser(name: 'widy');
+greetNewUSer();
+
+//required
+void greetNewUser({required Name, required age, required isVerified})
+*/
+
+// variabel scope
+/*void main() {
+  var isAvailableForDiscount = true;
+  var price = 300000;
+  num discount = 0;
+  if (isAvailableForDiscount) {
+    discount = 10 / 100 * price;
+  }
+  print('You need to pay: ${price - discount}');
+}*/
+
+// dipisah jadi dua fungsi
+/*void main() {
+  var harga = 30000;
+  var discount = checkDiscount(harga);
+  print('kamu dapat diskon: $discount');
+  print('You need to pay:${harga - discount}');
+}
+
+num checkDiscount(num harga) {
+  num discount = 0; // pembuatan variabel baru dengan scope lebih kecil
+  if (harga >= 10000) {
+    discount = 10 / 100 * harga;
+  }
+
+  return discount;
+} */
+
+/*var price = 300000;
+void main() {
+  var discount = checkDiscount(price);
+  print('You need to pay: ${price - discount}');
+}
+
+num checkDiscount(num price) {
+  num discount = 0;
+  var discountApplied = true;
+  if (discountApplied) if (price >= 100000) {
+    discount = 10 / 100 * price;
+  }
+
+  return discount;
+} */
+
+//constant $ final
+
+//const
+/*const num pi = 3.14;
+
+void main() {
+  num radius = 7;
+  print(
+      'luas lingkaran dengan radius $radius: ${calculateCircleArea(radius)} ');
+}
+
+num calculateCircleArea(num radius) => pi * radius * radius;
+*/
+
+//final
+/*void main() {
+  final firstName = "Achmad";
+  final lastName = "Ilham";
+
+  print("hello $firstName $lastName");
+}*/
+
+void main() {
+  String? favoriteFood = 'Mie Ayam';
+
+  buyAMeal(favoriteFood!);
+}
+
+void buyAMeal(String? favoriteFood) {
+  print('i bought $favoriteFood');
 }
