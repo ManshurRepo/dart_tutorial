@@ -306,7 +306,7 @@ num calculateCircleArea(num radius) => pi * radius * radius;
   print("hello $firstName $lastName");
 }*/
 
-void main() {
+/*void main() {
   String? favoriteFood = 'Mie Ayam';
 
   buyAMeal(favoriteFood!);
@@ -314,4 +314,70 @@ void main() {
 
 void buyAMeal(String? favoriteFood) {
   print('i bought $favoriteFood');
+} */
+/*void main() {
+  var isRaining = true;
+
+  print('Prepare before going to office');
+  if (isRaining) {
+    print("oh, its raining, bring un umbrella");
+  }
+  print('Going to the office');
+} */
+
+/*void main() {
+  var openHours = 8;
+  var closeHours = 21;
+  var now = 6;
+
+  if (now > openHours && now < closeHours) {
+    print("Welcome, We Are Open");
+  } else {
+    print("sorry, we've closed");
+  }
+} */
+
+/*void main() {
+  var score = 85;
+
+  print('Nilai anda: ${calculateScore(score)}');
+}
+
+String calculateScore(num score) {
+  if (score > 90) {
+    return 'A';
+  } else if (score > 80) {
+    return 'B';
+  } else if (score > 70) {
+    return 'C';
+  } else {
+    return 'E';
+  }
+} */
+//conditional expression
+/*void main() {
+  var openHours = 8;
+  var closeHours = 21;
+  var now = 10;
+
+  var shopStatus = now > openHours && now < closeHours ? "open" : "close";
+  print(shopStatus);
+}*/
+
+/*void main() {
+  String? name = null;
+  var buyer = name ?? 'user';
+  print(buyer); 
+  }*/
+
+void main() {
+  int beliMinyak = 1;
+  bool adaTelur = true;
+
+  if (adaTelur) {
+    beliMinyak = 6;
+    print('karena ada telur maka minyaknya beli: $beliMinyak');
+  } else {
+    print(beliMinyak);
+  }
 }
