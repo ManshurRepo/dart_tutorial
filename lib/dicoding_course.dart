@@ -370,7 +370,7 @@ String calculateScore(num score) {
   print(buyer); 
   }*/
 
-void main() {
+/*void main() {
   int beliMinyak = 1;
   bool adaTelur = true;
 
@@ -380,4 +380,298 @@ void main() {
   } else {
     print(beliMinyak);
   }
+}*/
+
+//for loops
+/*void main() {
+  for (int i = 1; i <= 10; i++) {
+    String baris = '';
+    for (int j = 0; j <= i; j++) {
+      baris += '*';
+    }
+    print(baris);
+  }
+}*/
+
+//while and do-while
+/*void main() {
+  var i = 1;
+  while (i <= 100) {
+    print(i);
+    i++;
+  }
+}*/
+
+//do While
+/*void main() {
+  var i = 1;
+
+  do {
+    print(i);
+    i++;
+  } while (i <= 100);
+}*/
+
+/*void main() {
+  for (int i = 1; i <= 10; i++) {
+    String baris = '';
+    for (int j = 0; j <= i; j++) {
+      baris += '*';
+    }
+    print(baris);
+  }
+}*/
+
+/*void main() {
+  int i = 10;
+  do {
+    String baris = '';
+    int j = 0;
+    do {
+      baris += '*';
+      j++;
+    } while (j < i);
+    print(baris);
+    i--;
+  } while (i >= 1);
+} */
+
+//break and continue
+/*import 'dart:io';
+
+void main() {
+  //bilangan prima dibawah 100
+  var primeNumbers = [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59,
+    61,
+    67,
+    73,
+    79,
+    83,
+    89,
+    97
+  ];
+
+  stdout.write('Masukan angka bilangan prima:  ');
+  int searchNumber = int.parse(stdin.readLineSync()!);
+  print('Bilangan prima diantara 1-100: $searchNumber');
+
+  bool found = false;
+
+  for (int i = 0; i < primeNumbers.length; i++) {
+    if (searchNumber == primeNumbers[i]) {
+      print('$searchNumber adalah bilangan prima ke: ${i + 1}');
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) {
+    print('$searchNumber bukan angka prima');
+  }
+} */
+
+//contiune
+/*void main() {
+  for (int i = 1; i <= 10; i++) {
+    if (i % 3 == 0) {
+      continue;
+    }
+    print(i);
+  }
+}
+*/
+
+// switch and case
+/*void main() {
+  final firstNumber = 13;
+  final secondNumber = 18;
+  final operator = "+";
+
+  switch (operator) {
+    case '+':
+      print(
+          '$firstNumber $operator $secondNumber = ${firstNumber + secondNumber}');
+      break;
+    case '-':
+      print(
+          '$firstNumber $operator $secondNumber = ${firstNumber - secondNumber}');
+      break;
+    case '*':
+      print(
+          '$firstNumber $operator $secondNumber = ${firstNumber * secondNumber}');
+      break;
+    case '/':
+      print(
+          '$firstNumber $operator $secondNumber = ${firstNumber / secondNumber}');
+      break;
+    default:
+      print('Operator tidak ditemukan');
+  }
+}*/
+
+// Collections
+//list
+/*void main() {
+  List apaSaja = [1, "dicoding", true];
+  print(apaSaja.runtimeType);
+}*/
+
+// indexing
+/*void main() {
+  List dynamicList = [1, 'Dicoding', true];
+  print(dynamicList[2]); 
+}*/
+
+/*void main() {
+  List<String> stringList = ["hello", "dicoding", "dart"];
+  for (int i = 0; i < stringList.length; i++) {
+    print(stringList[i]);
+  }
+} */
+
+/*void main() {
+  List<String> stringList = ["Hello", "Selamat Datang di", "Dart"];
+  stringList.forEach((s) => print(s));
+}*/
+
+// List manipulation .add
+/*void main() {
+  List<String> stringList = ["Hello", "Selamat Datang di", "Dart"];
+  stringList.add("Flutter");
+  print(stringList);
+} */
+
+// fungsi insert
+/*void main() {
+  List<String> stringList = ["Hello", "Selamat Datang di", "Dart"];
+  stringList.insert(2, "Bahasa Pemrograman");
+  print(stringList);
+} */
+
+// mengubah nilai dalam list
+/*void main() {
+  List<String> stringList = ["Hello", "Selamat Datang di", "Dart"];
+  stringList[2] = "flutter"; //mengubah index ke 2
+  print(stringList);
+}*/
+
+//menghapus data
+//remove
+/* void main() {
+  List<String> stringList = [
+    "Dart",
+    "Python",
+    "R",
+    "Javascript",
+    "HTML",
+    "SQL"
+  ];
+  //menghapus list dengan nilai Dart
+  stringList.removeAt(1);
+  print(stringList); 
+
+  //menghapus data list terakhir
+  // stringList.removeLast();
+  //menghapus list mulai index ke-0 sampai ke-1 (indeks 2 masih dipertahankan)
+  // stringList.removeRange(0,2);
+} */
+
+//spread operator
+/*void main() {
+  var favorites = ["alpukat", "pisang", "delima", "mangga", "manggis", "jambu"];
+  var other = ["strober", "pepaya"];
+  var allFav = [...favorites, ...other];
+  print(allFav);
+} */
+
+// Null aware
+/*void main() {
+  List<dynamic>? daftar;
+  List<dynamic>? daftar2 = [0, ...?daftar];
+  print(daftar2);
+} */
+
+//Set
+/*void main() {
+  Set<int> setBaru = new Set.from([1, 4, 6, 4, 11]);
+  print(setBaru);
+}*/
+
+// menambahkan nilai ke dalam set
+// add() / addAll()
+/*void main() {
+  var numberSet = {1, 4, 6};
+
+  // Menambahkan data ke dalam set
+  numberSet.add(8);
+  numberSet.addAll({2, 3, 5, 7});
+
+  print(numberSet);
+} */
+
+/*void main() {
+  var numberSet = {1, 3, 4, 5};
+
+  //menghapus nilai dalam set
+  numberSet.remove(3);
+  print(numberSet);
+} */
+
+// menampilkan data pada index tertentu
+/*void main() {
+  var numberSet = {1, 4, 6, 2, 3};
+
+  // Mendapatkan data Set pada indeks ke-2
+  print(numberSet.elementAt(2));
+}*/
+
+// union dan intersection
+/*void main() {
+  var setA = {1, 2, 3};
+  var setB = {3, 4, 5};
+
+  var union = setA.union(setB);
+  var intersection = setA.intersection(setB);
+
+  print(union);
+  print(intersection);
+} */
+
+// Map
+/*void main() {
+  var capital = {"Jakarta": "Indonesia", "London": "England", "Tokyo": "Japan"};
+
+  print(capital["Jakarta"]);
+}*/
+
+/*void main() {
+  var capital = {"Jakarta": "Indonesia", "London": "England", "Tokyo": "Japan"};
+
+  var mapKeys = capital.keys;
+  print("mapKeys : $mapKeys");
+}*/
+
+//menambahkan key value
+void main() {
+  var capital = {"Jakarta": "Indonesia", "London": "England", "Tokyo": "Japan"};
+
+  capital["New Delhi"] = "India";
+  print(capital);
 }
