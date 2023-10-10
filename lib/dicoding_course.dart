@@ -711,7 +711,7 @@ class Animal {
 */
 // Properties & Methods
 
-import 'animal.dart';
+/*import 'animal.dart';
 
 void main() {
   var dicodingCat = Animal('Blacky', 1, 3);
@@ -720,4 +720,177 @@ void main() {
   dicodingCat.poop();
 
   print(dicodingCat.weight);
+}
+*/
+
+//Constructor
+
+/*import 'animal.dart';
+
+void main() {
+  var dicodingCat = Animal();
+
+  dicodingCat.name = 'Boris';
+  dicodingCat.age = 1;
+  dicodingCat.weight = 3;
+}
+
+class Animal {
+  String name = '';
+  int age = 0;
+  double weight = 0;
+
+  Animal(String name, int age, doubel weight) {
+    this.name = name;
+    this.age = age;
+    this.weight = weight;
+  }
+} */
+
+//cascade notation
+/*import 'package:dart_tutorial/animal.dart';
+
+void main() {
+  var dicodingCat = Animal("", 2, 4);
+  dicodingCat.name = "Boris";
+  dicodingCat.eat();
+}*/
+
+//Inheritance
+/*import 'cat.dart';
+
+void main() {
+  var dicodingCat = Cat('Grayson', 2, 5, 'gray');
+
+  dicodingCat.walk();
+  dicodingCat.eat();
+
+  print(dicodingCat.weight);
+}*/
+
+//abstract
+
+/*abstract class Animal{
+
+}*/
+
+// implicit interface
+/*import 'bird.dart';
+
+void main() {
+  var dicodingBird = Bird('birdy', 1, 0.3, 'Blue');
+
+  dicodingBird.fly();
+  dicodingBird.eat();
+} */
+
+// enumerated types
+
+/*void main() {
+  print(Rainbow.values);
+  print(Rainbow.blue);
+  print(Rainbow.orange.index);
+  print(Rainbow.blue.name);
+}
+
+enum Rainbow { red, orange, yellow, green, blue, indigo, violet }
+*/
+//enum switch statements
+/*void main() {
+  var weatherForecast = Weather.cloudy;
+
+  switch (weatherForecast) {
+    case Weather.sunny:
+      print("Today's weather forecast is sunny");
+      break;
+    case Weather.storm:
+      print("Today's weather forecast is strom");
+      break;
+    case Weather.cloudy:
+      print("Today's weather forecast is cloudy");
+      break;
+    case Weather.rain:
+      print("Today's weather forecast is rain");
+      break;
+  }
+}
+
+enum Weather { sunny, cloudy, rain, storm } */
+/*void main() {
+  var weatherForecast = Weather.cloudy;
+
+  print(weatherForecast);
+}
+
+enum Weather {
+  sunny(15),
+  cloudy(34),
+  rain(69),
+  storm(83);
+
+  final int rainAmount;
+
+  const Weather(this.rainAmount);
+
+  String toString() =>
+      "Today's weather forecast is $name with $rainAmount% chance of rain";
+} */
+
+/*import 'package:dart_tutorial/performer.dart';
+
+void main() {
+  var arielNoah = Musician();
+  arielNoah.perform();
+}
+
+mixin Singer implements Performer {
+  @override
+  void perform() {
+    print('Singing');
+  }
+}
+
+mixin Dancer implements Performer {
+  @override
+  void perform() {
+    print('Dancing');
+  }
+}
+
+class Musician extends Performer with Singer, Dancer {
+  void showTime() {
+    perform();
+  }
+}*/
+
+//Extension method
+void main() {
+  var unsortedNumbers = [2, 5, 3, 1, 4];
+  print(unsortedNumbers);
+
+  var sortedNumbers = unsortedNumbers.sortAsc();
+
+  print(sortedNumbers);
+}
+
+extension Sorting on List<int> {
+  List<int> sortAsc() {
+    var list = this;
+    var length = this.length;
+
+    for (int i = 0; i < length - 1; i++) {
+      int min = i;
+      for (int j = i + 1; j < length; j++) {
+        if (list[j] < list[min]) {
+          min = j;
+        }
+      }
+
+      int tmp = list[min];
+      list[min] = list[i];
+      list[i] = tmp;
+    }
+
+    return list;
+  }
 }
